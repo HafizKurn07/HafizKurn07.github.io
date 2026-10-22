@@ -1,7 +1,8 @@
 ---
 import '../styles/global.css';
 
-const judul = Astro.props.judul;
+const { judul = "Portofolio - Hafiz Kurniawan" } = Astro.props;
+const currentPath = Astro.url.pathname;
 ---
 
 <html lang="id">
@@ -11,23 +12,65 @@ const judul = Astro.props.judul;
     <title>{judul}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="/">Beranda</a>
-        <a href="/prestasi">Prestasi</a>
-        <a href="/proyek">Proyek</a>
-      </nav>
+    <!-- Futuristic ambient light blobs -->
+    <div class="ambient-glow glow-1" aria-hidden="true"></div>
+    <div class="ambient-glow glow-2" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="/" class="brand-logo" aria-label="Beranda Hafiz Kurniawan">
+          <span class="logo-icon">&lt;HK /&gt;</span>
+          <span class="logo-text">
+            <strong>Hafiz Kurniawan</strong>
+            <small>ICT Educator</small>
+          </span>
+        </a>
+
+        <nav class="nav-links">
+          <a href="/" class={currentPath === '/' ? 'active' : ''}>
+            <span class="nav-dot"></span>
+            Beranda
+          </a>
+          <a href="/prestasi" class={currentPath.startsWith('/prestasi') ? 'active' : ''}>
+            <span class="nav-dot"></span>
+            Prestasi
+          </a>
+          <a href="/proyek" class={currentPath.startsWith('/proyek') ? 'active' : ''}>
+            <span class="nav-dot"></span>
+            Proyek
+          </a>
+        </nav>
+      </div>
     </header>
 
-    <main>
+    <main class="site-main">
       <slot />
     </main>
 
-    <footer>
-      <p>Portofolio Siswa SMP</p>
+    <footer class="site-footer">
+      <div class="footer-divider"></div>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="footer-logo">&lt;HK /&gt;</span>
+          <p class="footer-tagline">Belajar Bareng • Berbagi • Diskusi • Berolahraga</p>
+        </div>
+
+        <div class="footer-badges">
+          <span class="tech-badge">Astro v7</span>
+          <span class="tech-badge">Vanilla CSS</span>
+          <span class="tech-badge">SMPII Al Abidin Boyolali</span>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 <strong>Hafiz Kurniawan</strong>. All rights reserved.</p>
+          <a href="#top" class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+            Ke Atas ↑
+          </a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
