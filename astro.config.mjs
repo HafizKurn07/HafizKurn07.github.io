@@ -1,5 +1,5 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://usernamegithub.github.io',
+  site: 'https://hafizkurn07.github.io',
 });
