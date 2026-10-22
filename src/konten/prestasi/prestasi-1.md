@@ -1,6 +1,6 @@
 ---
 judul: "Juara 1 Lomba Mewarnai"
-tahun: 2018
+tahun: 2006
 tingkat: "Tingkat Kecamatan (TK)"
-deskripsi: "Menjuarai lomba mewarnai antar TK se-kecamatan dengan tema Hewan Kesayanganku."
+deskripsi: "Menjuarai lomba mewarnai tingkat TK se-kecamatan."
 ---

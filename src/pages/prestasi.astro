@@ -8,29 +8,13 @@ import PrestasiItem from '../components/PrestasiItem.astro';
 import * as prestasi1 from '../konten/prestasi/prestasi-1.md';
 import * as prestasi2 from '../konten/prestasi/prestasi-2.md';
 import * as prestasi3 from '../konten/prestasi/prestasi-3.md';
-import * as prestasi4 from '../konten/prestasi/prestasi-4.md';
-import * as prestasi5 from '../konten/prestasi/prestasi-5.md';
 ---
 
-<Layout judul="Prestasi">
+<Layout judul="Prestasi - Hafiz Kurniawan">
   <h1>Prestasi</h1>
-  <p>Perjalanan prestasiku dari TK sampai SMP, yang terbaru ada di atas.</p>
+  <p>Daftar pencapaian dan prestasi, urutan terbaru ada di atas.</p>
 
   <div class="timeline">
-    <PrestasiItem
-      judul={prestasi5.frontmatter.judul}
-      tahun={prestasi5.frontmatter.tahun}
-      tingkat={prestasi5.frontmatter.tingkat}
-      deskripsi={prestasi5.frontmatter.deskripsi}
-    />
-
-    <PrestasiItem
-      judul={prestasi4.frontmatter.judul}
-      tahun={prestasi4.frontmatter.tahun}
-      tingkat={prestasi4.frontmatter.tingkat}
-      deskripsi={prestasi4.frontmatter.deskripsi}
-    />
-
     <PrestasiItem
       judul={prestasi3.frontmatter.judul}
       tahun={prestasi3.frontmatter.tahun}

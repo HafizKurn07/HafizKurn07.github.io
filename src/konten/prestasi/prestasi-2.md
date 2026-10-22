@@ -1,6 +1,6 @@
 ---
-judul: "Juara 2 Lomba Menggambar"
-tahun: 2020
-tingkat: "Tingkat Kota (SD)"
-deskripsi: "Meraih juara kedua lomba menggambar bertema Lingkungan Bersih antar SD se-kota."
+judul: "Juara 1 POPDA Voli"
+tahun: 2012
+tingkat: "Tingkat Kecamatan (SD)"
+deskripsi: "Meraih Juara 1 Pekan Olahraga Pelajar Daerah (POPDA) cabang bola voli tingkat kecamatan."
 ---
