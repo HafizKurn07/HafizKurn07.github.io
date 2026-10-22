@@ -1,0 +1,40 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const nama = "Aisyah Putri";
+const kelas = "9A";
+const sekolah = "SMP Al Abidin Surakarta";
+const foto = "/foto/profil.jpg";
+const github = "https://github.com/usernamegithub";
+const instagram = "https://instagram.com/usernameinstagram";
+const biografi = "Halo! Aku siswa kelas 9 yang suka belajar teknologi dan membuat karya digital.";
+---
+
+<Layout judul="Beranda">
+  <h1>Halo, aku {nama}</h1>
+
+  <div class="biodata">
+    <img class="foto-profil" src={foto} alt="Foto profil" />
+
+    <div class="info-diri">
+      <p><strong>Nama:</strong> {nama}</p>
+      <p><strong>Kelas:</strong> {kelas}</p>
+      <p><strong>Sekolah:</strong> {sekolah}</p>
+
+      <div class="tautan-sosial">
+        <a href={github} target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href={instagram} target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </div>
+  </div>
+
+  <h2>Tentang Aku</h2>
+  <p>{biografi}</p>
+
+  <h2>Hobi</h2>
+  <ul>
+    <li>Menggambar</li>
+    <li>Membaca buku sains</li>
+    <li>Bersepeda</li>
+  </ul>
+</Layout>

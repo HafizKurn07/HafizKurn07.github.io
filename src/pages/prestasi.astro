@@ -1,0 +1,55 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PrestasiItem from '../components/PrestasiItem.astro';
+
+// Satu file .md = satu prestasi.
+// Prestasi baru: buat file di src/konten/prestasi/, lalu tambahkan import di bawah ini
+// dan satu blok <PrestasiItem ... /> di bagian halaman (urutan: paling baru di atas).
+import * as prestasi1 from '../konten/prestasi/prestasi-1.md';
+import * as prestasi2 from '../konten/prestasi/prestasi-2.md';
+import * as prestasi3 from '../konten/prestasi/prestasi-3.md';
+import * as prestasi4 from '../konten/prestasi/prestasi-4.md';
+import * as prestasi5 from '../konten/prestasi/prestasi-5.md';
+---
+
+<Layout judul="Prestasi">
+  <h1>Prestasi</h1>
+  <p>Perjalanan prestasiku dari TK sampai SMP, yang terbaru ada di atas.</p>
+
+  <div class="timeline">
+    <PrestasiItem
+      judul={prestasi5.frontmatter.judul}
+      tahun={prestasi5.frontmatter.tahun}
+      tingkat={prestasi5.frontmatter.tingkat}
+      deskripsi={prestasi5.frontmatter.deskripsi}
+    />
+
+    <PrestasiItem
+      judul={prestasi4.frontmatter.judul}
+      tahun={prestasi4.frontmatter.tahun}
+      tingkat={prestasi4.frontmatter.tingkat}
+      deskripsi={prestasi4.frontmatter.deskripsi}
+    />
+
+    <PrestasiItem
+      judul={prestasi3.frontmatter.judul}
+      tahun={prestasi3.frontmatter.tahun}
+      tingkat={prestasi3.frontmatter.tingkat}
+      deskripsi={prestasi3.frontmatter.deskripsi}
+    />
+
+    <PrestasiItem
+      judul={prestasi2.frontmatter.judul}
+      tahun={prestasi2.frontmatter.tahun}
+      tingkat={prestasi2.frontmatter.tingkat}
+      deskripsi={prestasi2.frontmatter.deskripsi}
+    />
+
+    <PrestasiItem
+      judul={prestasi1.frontmatter.judul}
+      tahun={prestasi1.frontmatter.tahun}
+      tingkat={prestasi1.frontmatter.tingkat}
+      deskripsi={prestasi1.frontmatter.deskripsi}
+    />
+  </div>
+</Layout>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sky3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#bae6fd"/>
+    </linearGradient>
+    <linearGradient id="ground3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+  </defs>
+  <!-- Sky -->
+  <rect width="600" height="400" fill="url(#sky3)"/>
+  
+  <!-- Clouds -->
+  <ellipse cx="120" cy="80" rx="60" ry="25" fill="#ffffff" opacity="0.9"/>
+  <ellipse cx="160" cy="70" rx="45" ry="30" fill="#ffffff" opacity="0.9"/>
+  <ellipse cx="450" cy="110" rx="70" ry="30" fill="#ffffff" opacity="0.9"/>
+  <ellipse cx="490" cy="100" rx="50" ry="35" fill="#ffffff" opacity="0.9"/>
+
+  <!-- Scratch Score Bar -->
+  <rect x="30" y="25" width="160" height="40" rx="10" fill="#ff7a00"/>
+  <text x="45" y="50" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" font-size="16" fill="#ffffff">🐟 Score: 150</text>
+
+  <!-- Floating Platform -->
+  <rect x="220" y="190" width="160" height="24" rx="8" fill="#a16207"/>
+  <rect x="220" y="190" width="160" height="8" rx="4" fill="#22c55e"/>
+  
+  <!-- Fish coin on platform -->
+  <g transform="translate(290, 150)">
+    <circle cx="15" cy="15" r="18" fill="#fbbf24" stroke="#f59e0b" stroke-width="3"/>
+    <text x="15" y="21" text-anchor="middle" font-size="16">🐟</text>
+  </g>
+
+  <!-- Ground -->
+  <rect y="290" width="600" height="110" fill="url(#ground3)"/>
+  <rect y="290" width="600" height="14" fill="#4ade80"/>
+
+  <!-- Cute Cat Sprite (Scratch style orange cat) -->
+  <g transform="translate(90, 190)">
+    <!-- Cat tail -->
+    <path d="M 15 75 Q -15 50 5 35" stroke="#f97316" stroke-width="10" stroke-linecap="round" fill="none"/>
+    <!-- Cat body -->
+    <ellipse cx="50" cy="70" rx="35" ry="28" fill="#f97316"/>
+    <!-- Legs -->
+    <rect x="30" y="85" width="12" height="20" rx="6" fill="#ea580c"/>
+    <rect x="58" y="85" width="12" height="20" rx="6" fill="#ea580c"/>
+    <!-- Head -->
+    <circle cx="70" cy="40" r="28" fill="#f97316"/>
+    <!-- Ears -->
+    <polygon points="52,24 62,5 72,20" fill="#ea580c"/>
+    <polygon points="76,20 86,5 96,24" fill="#ea580c"/>
+    <!-- Face -->
+    <circle cx="63" cy="38" r="5" fill="#1e293b"/>
+    <circle cx="81" cy="38" r="5" fill="#1e293b"/>
+    <polygon points="72,46 68,52 76,52" fill="#fda4af"/>
+    <!-- Whiskers -->
+    <line x1="45" y1="46" x2="60" y2="48" stroke="#ffffff" stroke-width="2"/>
+    <line x1="45" y1="52" x2="60" y2="52" stroke="#ffffff" stroke-width="2"/>
+    <line x1="99" y1="46" x2="84" y2="48" stroke="#ffffff" stroke-width="2"/>
+    <line x1="99" y1="52" x2="84" y2="52" stroke="#ffffff" stroke-width="2"/>
+  </g>
+
+  <!-- Game UI Badge -->
+  <g transform="translate(430, 25)">
+    <rect width="140" height="36" rx="8" fill="#4f46e5"/>
+    <text x="70" y="23" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" font-size="14" fill="#ffffff">🕹️ Scratch 3.0</text>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+---
+const judul = Astro.props.judul;
+const tahun = Astro.props.tahun;
+const deskripsi = Astro.props.deskripsi;
+const alat = Astro.props.alat;
+const foto = Astro.props.foto;
+---
+
+<div class="kartu">
+  <img src={foto} alt={judul} />
+  <div class="isi">
+    <h3>{judul}</h3>
+    <p class="tahun">{tahun}</p>
+    <p class="deskripsi">{deskripsi}</p>
+    <p class="alat">Alat: {alat}</p>
+  </div>
+</div>

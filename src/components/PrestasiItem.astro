@@ -1,0 +1,13 @@
+---
+const judul = Astro.props.judul;
+const tahun = Astro.props.tahun;
+const tingkat = Astro.props.tingkat;
+const deskripsi = Astro.props.deskripsi;
+---
+
+<div class="prestasi">
+  <p class="tahun">{tahun}</p>
+  <h3>{judul}</h3>
+  <p class="tingkat">{tingkat}</p>
+  <p class="deskripsi">{deskripsi}</p>
+</div>

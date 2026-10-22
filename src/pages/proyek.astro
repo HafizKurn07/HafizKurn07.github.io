@@ -1,0 +1,60 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProyekCard from '../components/ProyekCard.astro';
+
+// Satu file .md = satu proyek.
+// Proyek baru: buat file di src/konten/proyek/, lalu tambahkan import di bawah ini
+// dan satu blok <ProyekCard ... /> di bagian halaman.
+import * as proyek1 from '../konten/proyek/proyek-1.md';
+import * as proyek2 from '../konten/proyek/proyek-2.md';
+import * as proyek3 from '../konten/proyek/proyek-3.md';
+import * as proyek4 from '../konten/proyek/proyek-4.md';
+import * as proyek5 from '../konten/proyek/proyek-5.md';
+---
+
+<Layout judul="Proyek">
+  <h1>Proyek</h1>
+  <p>Karya dan proyek yang pernah kukerjakan.</p>
+
+  <div class="galeri">
+    <ProyekCard
+      judul={proyek5.frontmatter.judul}
+      tahun={proyek5.frontmatter.tahun}
+      deskripsi={proyek5.frontmatter.deskripsi}
+      alat={proyek5.frontmatter.alat}
+      foto={proyek5.frontmatter.foto}
+    />
+
+    <ProyekCard
+      judul={proyek4.frontmatter.judul}
+      tahun={proyek4.frontmatter.tahun}
+      deskripsi={proyek4.frontmatter.deskripsi}
+      alat={proyek4.frontmatter.alat}
+      foto={proyek4.frontmatter.foto}
+    />
+
+    <ProyekCard
+      judul={proyek3.frontmatter.judul}
+      tahun={proyek3.frontmatter.tahun}
+      deskripsi={proyek3.frontmatter.deskripsi}
+      alat={proyek3.frontmatter.alat}
+      foto={proyek3.frontmatter.foto}
+    />
+
+    <ProyekCard
+      judul={proyek2.frontmatter.judul}
+      tahun={proyek2.frontmatter.tahun}
+      deskripsi={proyek2.frontmatter.deskripsi}
+      alat={proyek2.frontmatter.alat}
+      foto={proyek2.frontmatter.foto}
+    />
+
+    <ProyekCard
+      judul={proyek1.frontmatter.judul}
+      tahun={proyek1.frontmatter.tahun}
+      deskripsi={proyek1.frontmatter.deskripsi}
+      alat={proyek1.frontmatter.alat}
+      foto={proyek1.frontmatter.foto}
+    />
+  </div>
+</Layout>
