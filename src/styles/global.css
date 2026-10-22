@@ -99,17 +99,17 @@ a {
 }
 
 .logo-icon {
-  font-family: var(--f-mono);
-  font-weight: 700;
-  font-size: 0.95rem;
   background: var(--warna-gradien);
   color: #ffffff;
-  padding: 6px 12px;
-  border-radius: 10px;
-  letter-spacing: -0.02em;
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
-  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  flex-shrink: 0;
 }
 
 .brand-logo:hover .logo-icon {
